@@ -136,6 +136,7 @@ def calculate_steering(cones,max_steering):
         print('right || Average: {}'.format(average_y))
         return max_steering
 
+    
 def calculate_throttle(gps,max_throttle,target_speed):
 
     velocity = math.sqrt(math.pow(gps.gnss.velocity.x_val, 2) + math.pow(gps.gnss.velocity.y_val, 2))
